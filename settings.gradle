@@ -1,0 +1,3 @@
+include ':qr'
+include ':app'
+rootProject.name = "QrApplication"

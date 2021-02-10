@@ -1,0 +1,126 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/topLayout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:keepScreenOn="true"
+    android:orientation="vertical">
+
+    <com.americana.qr.camera.CameraSourcePreview
+        android:id="@+id/preview"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" />
+
+    <com.americana.qr.ScannerOverlay
+        android:id="@+id/qr_overlay"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#d8000000"
+        app:line_speed="6"
+        app:line_width="200"
+        app:square_height="210"
+        app:square_width="210" />
+
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/cons_scanner"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true">
+
+        <FrameLayout
+            android:id="@+id/fl_bar"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:animateLayoutChanges="true"
+            app:layout_constraintEnd_toEndOf="@+id/iv_qr_border"
+            app:layout_constraintStart_toStartOf="@+id/iv_qr_border"
+            app:layout_constraintTop_toTopOf="@+id/iv_qr_border">
+
+            <View
+                android:id="@+id/bar"
+                android:layout_width="match_parent"
+                android:layout_height="80dp"
+                android:layout_marginTop="@dimen/_5dp"
+                android:background="@drawable/d_rectangle_qr_scanner"
+                android:visibility="gone"
+                tools:visibility="visible" />
+        </FrameLayout>
+
+        <ImageView
+            android:id="@+id/iv_qr_border"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:src="@drawable/ic_scan_border"
+            android:visibility="invisible"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="20dp"
+            android:layout_marginEnd="10dp"
+            android:orientation="vertical"
+            app:layout_constraintBottom_toBottomOf="@+id/iv_qr_border"
+            app:layout_constraintStart_toEndOf="@+id/iv_qr_border"
+            app:layout_constraintTop_toTopOf="@+id/iv_qr_border">
+
+            <ImageView
+                android:id="@+id/iv_qr_tourch"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/ic_qr_torch" />
+
+            <ImageView
+                android:id="@+id/iv_qr_gallery"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="33dp"
+                android:src="@drawable/ic_qr_gallery" />
+        </LinearLayout>
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <ImageView
+        android:id="@+id/iv_qr_square"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:src="@drawable/ic_scan_border"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <View
+        android:id="@+id/view_rect_rrror"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:background="@drawable/d_rectangle_qr_error"
+        android:visibility="gone"
+        app:layout_constraintBottom_toBottomOf="@+id/iv_qr_square"
+        app:layout_constraintEnd_toEndOf="@+id/iv_qr_square"
+        app:layout_constraintStart_toStartOf="@+id/iv_qr_square"
+        app:layout_constraintTop_toTopOf="@+id/iv_qr_square" />
+
+
+    <com.airbnb.lottie.LottieAnimationView
+        android:id="@+id/iv_loader"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_centerInParent="true"
+        android:visibility="gone"
+        app:lottie_autoPlay="true"
+        app:lottie_fileName="LOADER_v13.json"
+        app:lottie_loop="true" />
+
+    <include
+        layout="@layout/layout_qr_camera_permission"
+        android:visibility="gone" />
+
+</RelativeLayout>
