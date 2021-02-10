@@ -1,6 +1,9 @@
 plugins {
     id 'com.android.library'
 }
+group = 'com.github.saurabhM-21'
+version = '1.0.0'
+
 
 android {
     compileSdkVersion 30
