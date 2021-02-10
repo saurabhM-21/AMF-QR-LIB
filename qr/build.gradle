@@ -3,11 +3,7 @@ plugins {
 }
 group = 'com.github.saurabhM-21'
 version = '1.0.0'
-
-
-group = 'com.github.saurabhM-21'
-version = '1.0.0'
-
+apply plugin: 'maven-publish'
 
 android {
     compileSdkVersion 30
@@ -17,7 +13,7 @@ android {
         minSdkVersion 21
         targetSdkVersion 30
         versionCode 1
-        versionName "1.0"
+        versionName "1.0.0"
 
         testInstrumentationRunner "androidx.test.runner.AndroidJUnitRunner"
         consumerProguardFiles "consumer-rules.pro"
@@ -48,4 +44,18 @@ dependencies {
     androidTestImplementation 'androidx.test.espresso:espresso-core:3.3.0'
     androidTestImplementation 'androidx.test:runner:1.3.0'
     androidTestImplementation 'androidx.test:rules:1.3.0'
+}
+
+afterEvaluate {
+    publishing {
+        publications {
+            // Creates a Maven publication called "release".
+            release(MavenPublication) {
+                from components.release
+                groupId = 'com.github.saurabhM-21'
+                artifactId = 'AMF-QR-LIB'
+                version = '1.0.0'
+            }
+        }
+    }
 }
