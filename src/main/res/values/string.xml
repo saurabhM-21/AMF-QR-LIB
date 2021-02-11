@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="s_continue">Continue</string>
+    <string name="s_diliver_error">Sorry ,We do not deliver here, yet.</string>
+    <string name="s_invalid_qr_Code">Invalid QR Code</string>
+    <string name="s_not_able_to_read_qr">Not able to read QR Code</string>
+    <string name="s_please_align_qr">Please align the QR code\nwithin the Scanner</string>
+    <string name="s_select_store">SELECT STORE</string>
+    <string name="s_we_are_facing_to_read_qr">We are facing some issue to read this QR Code. Please select store manually</string>
+    <string name="s_store_id_invalid">Store ID Invalid</string>
+    <string name="s_no_store_id_exist">No Store exists with this ID.\nPlease select store from the available list.</string>
+    <string name="s_scan_qr">Scan QR</string>
+    <string name="drive_through">Drive Through</string>
+    <string name="carhop">Carhop</string>
+    <string name="s_qr_camera_access_des">Your privacy settings are preventing us from\n accessing your camera to scan the QR code!</string>
+    <string name="s_enable_camera_access">Camera Access Required to Scan QR Code</string>
+    <string name="uh_oh">UH-OH!</string>
+    <string name="cancel">Cancel</string>
+    <string name="store_not_serving">"Store is not serving "</string>
+    <string name="we_are_operational_for">"We are operational for "</string>
+    <string name="services_at_moment">services at the moment</string>
+    <string name="got_it">Got It</string>
+    <string name="dine_in">Dine-In</string>
+    <string name="pickup">Pickup</string>
+    <string name="s_enable_camera">Enable Camera</string>
+
+</resources>

@@ -1,0 +1,26 @@
+<resources>
+    <string name="pickup">استلام</string>
+    <string name="cancel">إلغاء</string>
+    <string name="got_it">فهمت ذلك</string>
+    <string name="dine_in">تناول الطعام في المطعم</string>
+    <string name="s_continue">استمر</string>
+    <string name="s_diliver_error">عذرًا، لا نقوم بالتوصيل الى هذا الموقع بعد</string>
+    <string name="s_invalid_qr_Code">رمز QR غير صالح</string>
+    <string name="s_not_able_to_read_qr">لا يمكن قراءة رمز QR</string>
+    <string name="s_please_align_qr">يرجى محاذاة رمز الاستجابة السريعة داخل الماسح المحدده</string>
+    <string name="s_select_store">اختار المطعم</string>
+    <string name="s_we_are_facing_to_read_qr">نحن نواجه بعض المشاكل بقراءة رمز الاستجابة السريعة. الرجاء تحديد المطعم يدويًا</string>
+    <string name="s_store_id_invalid">معرف المطعم غير صالح</string>
+    <string name="s_no_store_id_exist">لا يوجد مطعم بهذا المعرف.
+\n
+        الرجاء تحديد المتجر من القائمة المتاحة .</string>
+    <string name="s_scan_qr">مسح QR</string>
+    <string name="drive_through">الطلب من المركبة</string>
+    <string name="carhop">الطلب من السيارة</string>
+    <string name="s_qr_camera_access_des">إعدادات الخصوصية الخاصة بك تحول دون الوصول إلى الكاميرا لمسح رمز الاستجابة السريعة!</string>
+    <string name="s_enable_camera_access">يتطلب إستخدام الكاميرا لمسح رمز الاستجابة السريعة</string>
+    <string name="store_not_serving">المطعم ليس بالخدمة</string>
+    <string name="we_are_operational_for">نحن نعمل لكي</string>
+    <string name="services_at_moment">الخدمات في الوقت الحالي</string>
+    <string name="uh_oh">عذرًا!</string>
+</resources>
